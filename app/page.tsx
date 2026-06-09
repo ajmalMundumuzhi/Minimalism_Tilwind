@@ -2,11 +2,11 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="max-w-7xl mx-auto border-4 border-red-500">
-      <section className="h-screen flex">
-      <div className="w-1/2 flex flex-col justify-center">
-        <h1 className="text-6xl font-bold mb-6">Veggie Pizza Delight</h1>
-        <div className="flex gap-2 text-slate-600 mb-6 items-center">
+    <main className="max-w-7xl mx-auto px-4 lg:px-0">
+      <section className="min-h-screen flex flex-col-reverse lg:flex-row ">
+      <div className="w-full lg:w-1/2 flex flex-col justify-center">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-center">Veggie Pizza Delight</h1>
+        <div className="flex flex-wrap gap-2 text-slate-600 mb-6 items-center">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
           </svg>
@@ -35,8 +35,8 @@ export default function Home() {
         </div>
 
       </div>
-      <div className="w-1/2 flex items-center justify-center">
-        <Image src="/images/images (2).jpeg" alt="Veggie Pizza" width={500} height={500} />
+      <div className="w-full lg:w-1/2 flex items-center justify-center">
+        <Image src="/images/images (2).jpeg" className="w-full max-w-md h-auto" alt="Veggie Pizza" width={500} height={500} />
       </div>
       </section>
       <section id="ingredients" className="py-24">
