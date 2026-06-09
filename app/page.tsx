@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main>
-      <section className="w-full h-screen flex container mx-auto">
+    <main className="max-w-7xl mx-auto border-4 border-red-500">
+      <section className="h-screen flex">
       <div className="w-1/2 flex flex-col justify-center">
         <h1 className="text-6xl font-bold mb-6">Veggie Pizza Delight</h1>
         <div className="flex gap-2 text-slate-600 mb-6 items-center">
@@ -22,12 +22,12 @@ export default function Home() {
           pizza ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit auctor dui, sed efficitur ipsum bibendum nec. Sed at nunc eget nunc maximus efficitur. Donec in odio sed enim suscipit efficitur. Donec a semper dui. Donec a semper dui.        
         </p>
         <div className="flex gap-4">
-          <a href="#">
+          <a href="#checkout">
             <button className="bg-orange-500 text-white font-semibold hover:bg-orange-600 py-3 px-6">
               Check Ingredients
             </button>
           </a>
-          <a href="#">
+          <a href="#ingredients">
             <button className="bg-orange-500 text-white font-semibold hover:bg-orange-600 py-3 px-6">
               Get Recipe
             </button>
@@ -39,7 +39,7 @@ export default function Home() {
         <Image src="/images/images (2).jpeg" alt="Veggie Pizza" width={500} height={500} />
       </div>
       </section>
-      <section className="py-24">
+      <section id="ingredients" className="py-24">
         <h2 className="text-5xl font-bold mb-24 text-center">Ingredients</h2>
         <div className="grid grid-cols-3 gap-12 place-items-center">
           <div className="flex h-24 w-96 items-center rounded-lg p-2 shadow">
@@ -64,6 +64,79 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+
+      <section id="checkout" className="py-24">
+        <h2 className="text-5xl text-center font-bold mb-16">
+          Check Out The Recipes
+        </h2>
+        <div className="grid grid-cols-4">
+          <div className="group justify-self-center">
+            <Image
+              className="cursor-pointer hover:drop-shadow-2xl hover:scale-110 transition-transform duration-500 ease-in-out"
+              src="/images/images (2).jpeg"
+              alt="Recipe 1"
+              width={192}
+              height={192}
+            />
+            <p className="mt-2 text-center text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+              Pizzas
+            </p>
+          </div>
+          <div className="group justify-self-center">
+            <Image
+              className="cursor-pointer hover:drop-shadow-2xl hover:scale-110 transition-transform duration-500 ease-in-out"
+              src="/images/images (2).jpeg"
+              alt="Recipe 1"
+              width={192}
+              height={192}
+            />
+            <p className="mt-2 text-center text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+              Pizzas
+            </p>
+          </div>
+          <div className="group justify-self-center">
+            <Image
+              className="cursor-pointer hover:drop-shadow-2xl hover:scale-110 transition-transform duration-500 ease-in-out"
+              src="/images/images (2).jpeg"
+              alt="Recipe 1"
+              width={192}
+              height={192}
+            />
+            <p className="mt-2 text-center text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+              Pizzas
+            </p>
+          </div>
+          <div className="group justify-self-center">
+            <Image
+              className="cursor-pointer hover:drop-shadow-2xl hover:scale-110 transition-transform duration-500 ease-in-out"
+              src="/images/images (2).jpeg"
+              alt="Recipe 1"
+              width={192}
+              height={192}
+            />
+            <p className="mt-2 text-center text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+              Pizzas
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 text-center">
+        <h2 className="text-4xl font-semibold mb-4">
+          Subscribe for Delicious Recipes & Cooking Tips!
+        </h2>
+        <p className="mb-12 font-semibold">
+          Get the latest recipes and expert cooking tips delivered directly yo your inbox.
+        </p>
+        <form>
+          <input
+            type="email"
+            placeholder="Enter your email"
+            className="focus:outline-none w-96 border-b-2 focus:border-orange-500 py-1.5 px-3"
+          />
+          <button className="bg-orange-500 hover:bg-orange-600 text-white font-semibold ml-4 px-3 py-4">Subscribe Now</button>
+        </form>
       </section>
 
     </main>
