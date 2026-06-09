@@ -36,31 +36,52 @@ export default function Home() {
 
       </div>
       <div className="w-full lg:w-1/2 flex items-center justify-center">
-        <Image src="/images/images (2).jpeg" className="w-full max-w-md h-auto" alt="Veggie Pizza" width={500} height={500} />
+        <Image src="/images/pizza.png" className="w-full max-w-md h-auto" alt="Veggie Pizza" width={500} height={500} />
       </div>
       </section>
       <section id="ingredients" className="py-24">
         <h2 className="text-5xl font-bold mb-24 text-center">Ingredients</h2>
         <div className="grid grid-cols-3 gap-12 place-items-center">
           <div className="flex h-24 w-96 items-center rounded-lg p-2 shadow">
-            <Image className="mr-6 size-24 object-cover p-2" src="/images/download (2).jpeg" alt="Ingredient 1" width={100} height={100} />
+            <Image className="mr-6 size-24 object-cover p-2" src="/images/tomato.png" alt="Ingredient 1" width={100} height={100} />
             <div>
               <h3 className="text-xl font-semibold">Tomatoes</h3>
               <p className="text-sm text-slate-700">Fresh and juicy tomatoes for a rich sauce.</p>
             </div>
           </div>
           <div className="flex h-24 w-96 items-center rounded-lg p-2 shadow">
-            <Image className="mr-6 size-24 object-cover p-2" src="/images/download (2).jpeg" alt="Ingredient 1" width={100} height={100} />
+            <Image className="mr-6 size-24 object-cover p-2" src="/images/c-cheese.png" alt="Ingredient 1" width={100} height={100} />
             <div>
-              <h3 className="text-xl font-semibold">Tomatoes</h3>
-              <p className="text-sm text-slate-700">Fresh and juicy tomatoes for a rich sauce.</p>
+              <h3 className="text-xl font-semibold">Cheese</h3>
+              <p className="text-sm text-slate-700">Fresh cheese.</p>
             </div>
           </div>
           <div className="flex h-24 w-96 items-center rounded-lg p-2 shadow">
-            <Image className="mr-6 size-24 object-cover p-2" src="/images/download (2).jpeg" alt="Ingredient 1" width={100} height={100} />
+            <Image className="mr-6 size-24 object-cover p-2" src="/images/cherry.png" alt="Ingredient 1" width={100} height={100} />
             <div>
-              <h3 className="text-xl font-semibold">Tomatoes</h3>
-              <p className="text-sm text-slate-700">Fresh and juicy tomatoes for a rich sauce.</p>
+              <h3 className="text-xl font-semibold">Cherry</h3>
+              <p className="text-sm text-slate-700">Fresh Cherries for a sweet touch.</p>
+            </div>
+          </div>
+          <div className="flex h-24 w-96 items-center rounded-lg p-2 shadow">
+            <Image className="mr-6 size-24 object-cover p-2" src="/images/olive-oil.png" alt="Ingredient 1" width={100} height={100} />
+            <div>
+              <h3 className="text-xl font-semibold">Olive Oil</h3>
+              <p className="text-sm text-slate-700">Extra virgin olive oil for a rich flavor.</p>
+            </div>
+          </div>
+          <div className="flex h-24 w-96 items-center rounded-lg p-2 shadow">
+            <Image className="mr-6 size-24 object-cover p-2" src="/images/olives.png" alt="Ingredient 1" width={100} height={100} />
+            <div>
+              <h3 className="text-xl font-semibold">Olives</h3>
+              <p className="text-sm text-slate-700">Fresh olives for a savory touch.</p>
+            </div>
+          </div>
+          <div className="flex h-24 w-96 items-center rounded-lg p-2 shadow">
+            <Image className="mr-6 size-24 object-cover p-2" src="/images/onion.png" alt="Ingredient 1" width={100} height={100} />
+            <div>
+              <h3 className="text-xl font-semibold">Onion</h3>
+              <p className="text-sm text-slate-700">Fresh onion for a savory touch.</p>
             </div>
           </div>
         </div>
@@ -74,51 +95,52 @@ export default function Home() {
           <div className="group justify-self-center">
             <Image
               className="cursor-pointer hover:drop-shadow-2xl hover:scale-110 transition-transform duration-500 ease-in-out"
-              src="/images/images (2).jpeg"
+              src="/images/momos.png"
               alt="Recipe 1"
               width={192}
               height={192}
             />
             <p className="mt-2 text-center text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
-              Pizzas
+              Momos
             </p>
           </div>
           <div className="group justify-self-center">
             <Image
               className="cursor-pointer hover:drop-shadow-2xl hover:scale-110 transition-transform duration-500 ease-in-out"
-              src="/images/images (2).jpeg"
+              src="/images/burger.png"
               alt="Recipe 1"
               width={192}
               height={192}
             />
             <p className="mt-2 text-center text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
-              Pizzas
+              Burgers
             </p>
           </div>
           <div className="group justify-self-center">
             <Image
               className="cursor-pointer hover:drop-shadow-2xl hover:scale-110 transition-transform duration-500 ease-in-out"
-              src="/images/images (2).jpeg"
+              src="/images/biryani.png"
               alt="Recipe 1"
               width={192}
               height={192}
             />
             <p className="mt-2 text-center text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
-              Pizzas
+              Biriyani
             </p>
           </div>
           <div className="group justify-self-center">
             <Image
               className="cursor-pointer hover:drop-shadow-2xl hover:scale-110 transition-transform duration-500 ease-in-out"
-              src="/images/images (2).jpeg"
+              src="/images/samosa.png"
               alt="Recipe 1"
               width={192}
               height={192}
             />
             <p className="mt-2 text-center text-xl font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
-              Pizzas
+              Samosa
             </p>
           </div>
+          
         </div>
       </section>
 
